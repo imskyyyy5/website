@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+}
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    overflow-x:hidden ;
+    color: white;
+}
+
+header{
+    font-size: 40px;
+    padding: 1rem 9%;
+    top: 0;
+    left: 0;
+    border: 2px solid transparent;
+    margin-top: 20px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    filter: drop-shadow(10px);
+    z-index: 100;
+    background-color: transparent;
+    width: 100% ;
+}
+.logo{
+    color: #b74b4b;
+    font-weight: 800;
+    font-size: 3rem;
+    cursor:pointer;
+    transition: ease 0.5s;
+    
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+nav a{
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 4rem;
+    padding: 30px   ;
+    font-weight:500 ;
+    transition: ease 0.3s;
+    border-bottom: 3px solid transparent;
+}
+nav a:hover,
+nav a:active{
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+@media(max-width:995px) {
+    nav{
+        position: absolute;
+        top:100%;
+        right: 0;
+        width:40%;
+        border-left: 3px solid #b74b4b;
+        border-bottom: 3px solid #b74b4b;
+        border-bottom-left-radius: 2rem;
+        padding: 1rem solid;
+        background-color: black;
+        border-top: 0.1rem solid rgba(0,0,0,1);
+    }
+    nav.active{
+        display: block;
+    }
+    .nav a{
+        display: block;
+        font-size:2rem;
+        margin: 3rem 0;
+    }
+    nav a:hover,
+    nav a:active{
+        padding: 1rem;
+        border-radius: 0.5rem;
+        border-bottom:0.5rem solid #b74b4b;
+    }
+    
+}
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+}
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  background-color: black;  
+}
+.home .home-content h1{
+    font-size: 6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.hey{
+    color: #b74b4b;
+}
+.home-content h3{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+.home-img{
+    border-radius: 50%;
+}
+.home-img img{
+    position:relative;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px solid #b74b4b;
+    cursor:pointer;
+    transition: 0.2s linear;
+}
+.home-img img:hover{
+    font: size 1.8rem;
+    font-weight: 500;
+}
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width:4rem;
+    height: 4rem;
+    line-height: 1;
+    background-color: transparent;
+    border:0.2rem solid #b74b4b;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin:3rem 1.5rem 3rem 0 ;
+    transition:0.3s ease ;
+    color: white;
+
+}
+
+.social-icons a :hover{
+    color: black;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #b74b4b;
+    box-shadow: 0 0 25px #b74b4b;
+}
+.animation{
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    font-family: monospace;
+    font-size:100%;
+    border-right: 4px solid rgb(253, 253, 253);
+    width: 8ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(8),
+    cursor .4s  step-end infinite alternate;
+}
+@keyframes typing {
+    from{width:0;}
+
+    
+}
+@keyframes cursor 
+{
+ 50%{border-color: transparent;}   
+}
+
+.skill-title{
+    font-weight: 2000;
+    font-size: 100px;
+    color: #b74b4b  ;
+}
+.skill-list{
+    border:2px solid;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    justify-content: space-between;
+    margin: 30px;
+    overflow: visible;
+    
+}
+.skill-items{
+    flex: 0 0 5em;
+    font-size: 30px;
+    border: 2px solid;
+    gap: 3px;
+    position: relative;
+    width: 150px;
+    height: 30vh;
+    background-color: transparent;
+    align-content: center;
+    text-align: center;
+    transition: ease 0.2s;
+    cursor: pointer;
+    
+    
+}
+.skill-items:hover{
+    transform:scale(1.3);
+    z-index:10;
+}
+.nepal{
+    width: 60px;
+    height: 5.5vhvh;
+
+}
+/* .censpan{
+    text-align: center;
+} */
+
+.edu{
+    text-align: center;
+}
+.edu10{
+    font-size: 10vh;
+    color: #b74b4b;
+    
+}
+.gpa-10{
+    font-size: 7vh;
+}
+.school{
+    font-size: 5.5vh;
+}
+.edu11{
+font-size: 10vh;
+color: #b74b4b;
+}
+.high-school{
+    font-size: 5.5vh;
+}
+.stream{
+    font-size: 5vh;
+}
+#python-id{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.Python{
+    display: block;
+    position: absolute;
+    
+    width: 150px;
+    border: 2px solid;
+    height: 30vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    
+}
+.HTML{
+    display: block;
+    position: absolute;
+    width: 150px;
+    border: 2px solid;
+    height: 30vh;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+.css{
+    position: absolute;
+    width: 150px;
+    height: 30vh;
+    border: 2px solid;
+    z-index: -1;
+    top:0;
+    left:0;
+}
+.C{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 150px;
+    height: 30vh;
+}
+.ve{
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    width: 150px;
+    height: 30vh;
+}
+.graphics{
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: -1;
+    width: 150px;
+    height: 30vh;
+}
+.contact{
+    font-size: 10vh;
+    color: #b74b4b;
+}
+.mail{
+    font-size: 4vh;
+}
+.social-icons{
+    text-align: center;
+    border: 1px solid;
+    align-items: center;
+
+}
